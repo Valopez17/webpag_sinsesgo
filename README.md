@@ -20,7 +20,8 @@ sin-sesgo/
 │       ├── wordmark-ink.png    # Solo "SIN SESGO" (reserva para versiones compactas)
 │       ├── wordmark-ivory.png
 │       ├── favicon.png         # La "O" de anillos del logotipo
-│       └── photos/             # Fotografías del hero, la franja "En territorio" y la sección "Por qué"
+│       ├── photos/             # Fotografías del hero, la franja "En territorio" y la sección "Por qué"
+│       └── team/               # Retratos en blanco y negro del equipo (originales, sin retoque)
 ├── docs/
 │   └── brief-original.md       # Brief creativo original
 └── README.md
@@ -82,12 +83,18 @@ Las versiones en tinta y marfil se generaron a partir de `logo-original.png` (ne
    - Las imágenes incrustadas en el HTML (base64) pasaron a archivos en `assets/img/photos/`; el archivo único se separó en `index.html`, `assets/css` y `assets/js`.
    - Se eliminó código sin uso de versiones anteriores (campo de puntos del hero, símbolo del logotipo provisional).
 
+## Sección "Nuestro equipo"
+
+Sección `#equipo` entre "Por qué Sin Sesgo" y el cierre comercial: fondo blanco, introducción centrada, dos retratos en blanco y negro (`assets/img/team/`, usados tal como se entregaron; solo se recortan con CSS a 4:5), nombre de pila en tipografía manuscrita (Caveat) y nombre completo y cargo debajo. Hover discreto (acercamiento lento de la foto) y entrada con el sistema de animaciones existente. Apilada en móvil.
+
+Pendiente: nombres y cargos (hoy son placeholders `[entre corchetes]`) y la página "Conoce al equipo", que por ahora enlaza a la misma sección.
+
 ## Pendientes de contenido
 
 - Descripción técnica, metodología y entregables de las **encuestas de entrada**.
 - Entregables de **encuestas electorales** y procesos de levantamiento.
 - Hitos de la trayectoria de 20 años.
-- Perfiles del equipo.
+- Nombres, cargos y perfiles del equipo.
 - Correo, teléfono y dirección; aviso de privacidad y redes sociales.
 - **Fotografías:** confirmar origen y licencia de las imágenes actuales y sustituirlas por fotografía documental propia si se desea. La imagen de "Por qué Sin Sesgo" es la misma que la segunda del hero.
 - Revisar el titular rotativo del hero ("México", "la Gen Z", "los compradores") contra el posicionamiento electoral de la marca.
