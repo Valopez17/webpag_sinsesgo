@@ -56,7 +56,7 @@ Las tipografías se cargan desde Google Fonts, así que se necesita conexión pa
 
 **Componentes reutilizables:** botón (`.btn`, variantes `.primary` y `.solid`), kicker, acordeón de servicios (`.svc`), pasos de método (`.r`), puntos clave (`.pts`), franja fotográfica (`.band`), formulario, placeholder (`.ph`).
 
-**Servicios:** solo *Encuestas electorales* y *Encuestas de entrada* (confirmados). Hay un módulo "Próximo servicio" reservado; para agregar uno se duplica un bloque `.svc` en `index.html`. Las encuestas de entrada **no** son encuestas de salida; su descripción técnica está pendiente.
+**Servicios (confirmados):** Encuestas preelectorales, Encuestas de entrada, Encuestas de salida y Conteos rápidos. Para agregar uno se duplica un bloque `.svc` en `index.html`. Las encuestas de entrada y de salida son servicios distintos.
 
 ## Logotipo
 
@@ -85,17 +85,14 @@ Las versiones en tinta y marfil se generaron a partir de `logo-original.png` (ne
 
 ## Sección "Nuestro equipo"
 
-Franja compacta `#equipo` (≈ 480 px de alto en desktop) entre "Por qué Sin Sesgo" y el cierre comercial: fondo blanco, título y texto centrados, y cinco cuadros de 140 px en una sola fila. Los dos primeros son retratos en blanco y negro (`assets/img/team/`, usados tal como se entregaron; solo se recortan con CSS a cuadrado): **Verónica** (`retrato-02.png`) y **Valeria** (`retrato-01.png`), con el nombre en tipografía manuscrita (Caveat). Los otros tres son cuadros negros vacíos (`.slot`) reservados para futuros integrantes: para activar uno, se sustituye el `<div class="ph-img"></div>` por una `<img>` y se añade su `<p class="first">`.
+Franja compacta `#equipo` (≈ 480 px de alto en desktop) entre "Por qué Sin Sesgo" y el cierre comercial: fondo blanco, título y texto centrados, y cinco cuadros de 140 px en una sola fila. Los dos primeros son retratos en blanco y negro (`assets/img/team/`, usados tal como se entregaron; solo se recortan con CSS a cuadrado): **Verónica Arredondo** (`retrato-02.png`) y **Valeria Falcón** (`retrato-01.png`), con el nombre de pila en tipografía manuscrita (Caveat) y el nombre completo en gris debajo. Los otros tres son cuadros negros vacíos (`.slot`) reservados para futuros integrantes: para activar uno, se sustituye el `<div class="ph-img"></div>` por una `<img>` y se añade su `<p class="first">`.
 
 En móvil la retícula pasa a 3 columnas. Hover discreto (acercamiento lento de la foto) y entrada con el sistema de animaciones existente.
 
-Pendiente: apellidos y cargos (no se muestran hasta confirmarse) y la página "Conoce al equipo", que por ahora enlaza a la misma sección.
+Pendiente: cargos (no se muestran hasta confirmarse) y la página "Conoce al equipo", que por ahora enlaza a la misma sección.
 
 ## Pendientes de contenido
 
-- Descripción técnica, metodología y entregables de las **encuestas de entrada**.
-- Entregables de **encuestas electorales** y procesos de levantamiento.
-- Hitos de la trayectoria de 20 años.
 - Nombres, cargos y perfiles del equipo.
 - Correo, teléfono y dirección; aviso de privacidad y redes sociales.
 - **Fotografías:** confirmar origen y licencia de las imágenes actuales y sustituirlas por fotografía documental propia si se desea. La imagen de "Por qué Sin Sesgo" es la misma que la segunda del hero.
@@ -108,3 +105,7 @@ Pendiente: apellidos y cargos (no se muestran hasta confirmarse) y la página "C
 2. Páginas de **Nosotros**, **Metodología** y **Contacto**.
 3. Extraer header y footer a plantillas compartidas cuando existan varias páginas.
 4. Auditoría de rendimiento y accesibilidad con el contenido final.
+
+## Historial reciente
+
+- **v0.5:** CTA del hero cambia a "Hablemos"; se elimina la línea de tiempo de la sección de trayectoria; servicios ampliados a cuatro con descripciones confirmadas; textos de los cuatro pasos de método y de "Equipo" sin placeholders; nombres completos bajo los retratos; se desactiva el rebote de *overscroll* (`overscroll-behavior: none`) para evitar la línea blanca arriba y abajo.

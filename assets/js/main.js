@@ -30,10 +30,6 @@
  ul.onclick=function(e){if(e.target.closest('a'))setMenu(false)};
  addEventListener('keydown',function(e){if(e.key==='Escape')setMenu(false)});
  document.querySelectorAll('.svc>button').forEach(function(b){b.onclick=function(){var s=b.parentElement,o=s.dataset.open!=='true';s.dataset.open=o;b.setAttribute('aria-expanded',o)}});
- // timeline: 21 marks light up once in view
- var tk=document.querySelector('.ticks'),h='';for(var i=0;i<21;i++)h+='<b style="--i:'+i+'"></b>';tk.innerHTML=h;
- var tl=document.getElementById('tl');
- if('IntersectionObserver' in window){new IntersectionObserver(function(e,o){if(e[0].isIntersecting){tl.classList.add('in');o.disconnect()}},{threshold:.4}).observe(tl)}else tl.classList.add('in');
  // form (prototype, no network)
  document.getElementById('cf').onsubmit=function(e){e.preventDefault();var f=e.target,ok=document.getElementById('ok');
   if(!f.n.value.trim()||!/\S+@\S+\.\S+/.test(f.e.value)){ok.textContent='Escribe tu nombre y un correo válido para continuar.';return}
