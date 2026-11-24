@@ -85,9 +85,11 @@ Las versiones en tinta y marfil se generaron a partir de `logo-original.png` (ne
 
 ## Sección "Nuestro equipo"
 
-Sección `#equipo` entre "Por qué Sin Sesgo" y el cierre comercial: fondo blanco, introducción centrada, dos retratos en blanco y negro (`assets/img/team/`, usados tal como se entregaron; solo se recortan con CSS a 4:5), nombre de pila en tipografía manuscrita (Caveat) y nombre completo y cargo debajo. Hover discreto (acercamiento lento de la foto) y entrada con el sistema de animaciones existente. Apilada en móvil.
+Franja compacta `#equipo` (≈ 480 px de alto en desktop) entre "Por qué Sin Sesgo" y el cierre comercial: fondo blanco, título y texto centrados, y cinco cuadros de 140 px en una sola fila. Los dos primeros son retratos en blanco y negro (`assets/img/team/`, usados tal como se entregaron; solo se recortan con CSS a cuadrado): **Verónica** (`retrato-02.png`) y **Valeria** (`retrato-01.png`), con el nombre en tipografía manuscrita (Caveat). Los otros tres son cuadros negros vacíos (`.slot`) reservados para futuros integrantes: para activar uno, se sustituye el `<div class="ph-img"></div>` por una `<img>` y se añade su `<p class="first">`.
 
-Pendiente: nombres y cargos (hoy son placeholders `[entre corchetes]`) y la página "Conoce al equipo", que por ahora enlaza a la misma sección.
+En móvil la retícula pasa a 3 columnas. Hover discreto (acercamiento lento de la foto) y entrada con el sistema de animaciones existente.
+
+Pendiente: apellidos y cargos (no se muestran hasta confirmarse) y la página "Conoce al equipo", que por ahora enlaza a la misma sección.
 
 ## Pendientes de contenido
 
