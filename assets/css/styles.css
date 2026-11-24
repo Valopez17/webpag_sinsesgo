@@ -235,3 +235,11 @@ nav a:not(.btn){background-image:linear-gradient(currentColor,currentColor)}
 @media(min-width:2200px){
  body{font-size:19px}
 }
+
+/* ---------- Ajustes de altura: "En territorio" y cierre coral ---------- */
+.cta{min-height:100svh;display:flex;flex-direction:column;justify-content:center}
+.cta>.wrap{width:100%}
+@media(min-width:1024px){
+ .band{min-height:clamp(520px,88vh,1000px);align-items:center;background-position:center 72%}
+ .cta{padding-block:clamp(48px,6vh,88px)}
+}
