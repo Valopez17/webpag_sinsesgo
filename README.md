@@ -95,7 +95,7 @@ Pendiente: cargos (no se muestran hasta confirmarse) y la página "Conoce al equ
 
 - Nombres, cargos y perfiles del equipo.
 - Correo, teléfono y dirección; aviso de privacidad y redes sociales.
-- **Fotografías:** confirmar origen y licencia de las imágenes actuales y sustituirlas por fotografía documental propia si se desea. La imagen de "Por qué Sin Sesgo" es la misma que la segunda del hero.
+- **Fotografías:** confirmar origen y licencia de las imágenes actuales y sustituirlas por fotografía documental propia si se desea. La fotografía de "Por qué Sin Sesgo" (`plaza-caminando.png`) se usa tal como se entregó, sin retoque ni cambio de color.
 - Revisar el titular rotativo del hero ("México", "la Gen Z", "los compradores") contra el posicionamiento electoral de la marca.
 - Conexión real del formulario (hoy solo valida y muestra un mensaje).
 
@@ -108,4 +108,5 @@ Pendiente: cargos (no se muestran hasta confirmarse) y la página "Conoce al equ
 
 ## Historial reciente
 
+- **v0.6:** nueva fotografía en "Por qué Sin Sesgo" (personas caminando por una plaza, vista cenital) y se elimina su pie de foto provisional.
 - **v0.5:** CTA del hero cambia a "Hablemos"; se elimina la línea de tiempo de la sección de trayectoria; servicios ampliados a cuatro con descripciones confirmadas; textos de los cuatro pasos de método y de "Equipo" sin placeholders; nombres completos bajo los retratos; se desactiva el rebote de *overscroll* (`overscroll-behavior: none`) para evitar la línea blanca arriba y abajo.
